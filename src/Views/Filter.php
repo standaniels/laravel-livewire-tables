@@ -34,7 +34,7 @@ abstract class Filter
         }
     }
 
-    public static function make(string $name, string $key = null): Filter
+    public static function make(string $name, string $key = null): static
     {
         return new static($name, $key);
     }
